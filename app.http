@@ -1,0 +1,39 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+
+GET http://localhost:3000/tweets/1/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY3NDExNjI5OH0.KIvfflvPmnVo94uQ2NYXukZIf-h57-xS80aQg59_Wss
+
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY3NDExNjI5OH0.KIvfflvPmnVo94uQ2NYXukZIf-h57-xS80aQg59_Wss
+
+###
+
+
+POST http://localhost:3000/user/tweets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY3NDExNjI5OH0.KIvfflvPmnVo94uQ2NYXukZIf-h57-xS80aQg59_Wss
+
+{
+   "tweet": "The Mornings..."
+}
+
+###
+
+GET http://localhost:3000/tweets/2/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY3NDExNjI5OH0.KIvfflvPmnVo94uQ2NYXukZIf-h57-xS80aQg59_Wss
+
+###
+
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTY3NDExNjI5OH0.KIvfflvPmnVo94uQ2NYXukZIf-h57-xS80aQg59_Wss
+
+###
